@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Maia Unlocker | Vendas de Acessos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+html,body{
+    background:#0f0f0f;
+    color:#fff;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(90deg,#ff1e1e,#8b0000);
+    padding:60px 20px;
+    text-align:center;
+}
+
+.header-box{
+    display:inline-block;
+    padding:25px 40px;
+    border:3px solid #fff;
+    border-radius:12px;
+    box-shadow:0 0 20px rgba(255,30,30,.8);
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{box-shadow:0 0 10px rgba(255,30,30,.4);}
+    to{box-shadow:0 0 35px rgba(255,30,30,1);}
+}
+
+header h1{font-size:2.6em;margin-bottom:10px;}
+header p{font-size:1.2em;}
+
+/* CONTAINER */
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* BOX */
+.box{
+    background:#1c1c1c;
+    padding:30px;
+    border-radius:10px;
+}
+
+/* GRID */
+.grid-produtos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* CARD */
+.card-produto{
+    position:relative;
+    background:#111;
+    border-radius:10px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    animation:subir .8s ease forwards;
+}
+
+@keyframes subir{
+    from{opacity:0;transform:translateY(40px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+/* SELO */
+.selo{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#ff1e1e;
+    padding:6px 12px;
+    font-size:.8em;
+    font-weight:bold;
+    border-radius:5px;
+    animation:piscar 1.2s infinite;
+}
+
+@keyframes piscar{
+    0%{opacity:1;}
+    50%{opacity:.4;}
+    100%{opacity:1;}
+}
+
+.card-produto img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+    background:#fff;
+}
+
+/* TEXTO */
+.card-produto h3{color:#ff1e1e;margin-bottom:10px;}
+.preco-antigo{text-decoration:line-through;color:#ff4d4d;}
+.preco-novo{font-size:1.5em;font-weight:bold;color:#00ff88;}
+.contador{margin:10px 0;font-weight:bold;color:#ffd700;}
+
+/* BOTÕES */
+.btn-checkout{
+    margin-top:auto;
+    background:#ff1e1e;
+    color:#fff;
+    padding:14px;
+    text-align:center;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn-off{
+    margin-top:auto;
+    background:#444;
+    padding:14px;
+    text-align:center;
+    border-radius:8px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    margin:50px 0;
+    text-align:center;
+}
+
+.whatsapp a{
+    background:#25d366;
+    color:#000;
+    padding:18px 40px;
+    font-size:1.3em;
+    font-weight:bold;
+    text-decoration:none;
+    border-radius:10px;
+    display:inline-block;
+}
+
+/* HORÁRIO */
+.horario-atendimento{
+    color:#ffd700;
+    text-shadow:0 0 10px rgba(255,215,0,.7);
+    font-weight:bold;
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%{opacity:1;}
+    50%{opacity:.6;}
+    100%{opacity:1;}
+}
+
+/* FOOTER */
+footer{
+    background:#080808;
+    padding:20px;
+    text-align:center;
+    font-size:.9em;
+    color:#777;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    header{padding:40px 15px;}
+    .header-box{padding:18px 20px;}
+    header h1{font-size:1.8em;}
+    header p{font-size:1em;}
+    .box{padding:20px;}
+    .card-produto img{max-height:220px;object-fit:contain;}
+    .card-produto h3,
+    .preco-antigo,
+    .preco-novo,
+    .contador{text-align:center;}
+    .btn-checkout,.btn-off{width:100%;}
+    .whatsapp a{width:100%;max-width:320px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-box">
+        <h1>Maia Unlocker</h1>
+        <p>Venda de Acessos Premium com Qualidade e Segurança</p>
+    </div>
+</header>
+
+<div class="container">
+
+<div class="box">
+<h2 style="color:#ff1e1e;margin-bottom:20px;">💎 Nossos Produtos</h2>
+
+<div class="grid-produtos">
+
+<!-- PRODUTO 1 -->
+<div class="card-produto">
+<span class="selo">⭐ PROMOÇÃO</span>
+<img src="https://img.elo7.com.br/product/zoom/53A3367/aluguel-unlocktool-2h-6h-e-24h-unlocktool-chimera-contagoogle-aluguelunlocktool-boxfrp-desbloqueio-l.jpg">
+<h3>🔓 Unlock Tool</h3>
+<p class="preco-antigo">De R$ 20,00</p>
+<p class="preco-novo">Por R$ 15,00</p>
+<div class="contador" id="timer1"></div>
+<a href="https://mpago.la/1iM3BBJ" target="_blank" class="btn-checkout" id="btn1">🛒 IR PARA O CHECKOUT</a>
+</div>
+
+<!-- PRODUTO 2 -->
+<div class="card-produto">
+<span class="selo">⭐ PROMOÇÃO</span>
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_664896-MLB83497527977_042025-F.webp">
+<h3>🤖 Android Multi Tool</h3>
+<p class="preco-antigo">De R$ 16,00</p>
+<p class="preco-novo">Por R$ 12,00</p>
+<div class="contador" id="timer2"></div>
+<a href="https://mpago.la/315fUfZ" target="_blank" class="btn-checkout" id="btn2">🛒 IR PARA O CHECKOUT</a>
+</div>
+
+<!-- PRODUTO 3 -->
+<div class="card-produto">
+<span class="selo">⭐ PROMOÇÃO</span>
+<img src="https://cdn.dooca.store/140665/products/logo-tsm_495x495+fill_ffffff+crop_center.png?v=1742043206&webp=0">
+<h3>🧰 Alugue TSM Tool – 6h</h3>
+<p class="preco-antigo">De R$ 20,00</p>
+<p class="preco-novo">Por R$ 15,00</p>
+<div class="contador" id="timer3"></div>
+<a href="https://mpago.la/27LAY6V" target="_blank" class="btn-checkout" id="btn3">🛒 IR PARA O CHECKOUT</a>
+</div>
+
+</div>
+</div>
+
+<div class="whatsapp">
+    <h2 class="horario-atendimento">
+        ⏰ ATENDIMENTO DAS 09H às 12H e DAS 20:30 às 00:00
+    </h2><br>
+    <a href="https://wa.me/5583999648697" target="_blank">CHAMAR NO WHATSAPP</a>
+</div>
+
+</div>
+
+<footer>
+    © 2025 Maia Unlocker — Todos os direitos reservados
+</footer>
+
+<script>
+function iniciarContador(id, btn, horas){
+    const key="fim_"+id;
+    let fim=localStorage.getItem(key);
+    if(!fim){
+        fim=Date.now()+horas*60*60*1000;
+        localStorage.setItem(key,fim);
+    }
+
+    const i=setInterval(()=>{
+        const d=fim-Date.now();
+        const c=document.getElementById(id);
+        const b=document.getElementById(btn);
+
+        if(d<=0){
+            c.innerHTML="⏰ Promoção encerrada";
+            b.outerHTML='<div class="btn-off">🚫 PROMOÇÃO ENCERRADA</div>';
+            clearInterval(i);
+            return;
+        }
+
+        const h=Math.floor(d/3600000);
+        const m=Math.floor((d%3600000)/60000);
+        const s=Math.floor((d%60000)/1000);
+        c.innerHTML=`⏱️ Termina em ${h}h ${m}m ${s}s`;
+    },1000);
+}
+
+iniciarContador("timer1","btn1",2);
+iniciarContador("timer2","btn2",2);
+iniciarContador("timer3","btn3",2);
+</script>
+
+</body>
+</html>
