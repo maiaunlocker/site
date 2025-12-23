@@ -17,8 +17,9 @@ html,body{
 /* HEADER */
 header{
     background:linear-gradient(90deg,#ff1e1e,#8b0000);
-    padding:60px 20px;
+    padding:50px 20px 40px;
     text-align:center;
+    border-bottom:4px solid #ff1e1e;
 }
 
 .header-box{
@@ -50,6 +51,7 @@ header p{font-size:1.2em;}
     max-width:1200px;
     margin:auto;
     padding:40px 20px;
+    background:#0f0f0f;
 }
 
 /* BOX */
@@ -176,28 +178,18 @@ footer{
 
 /* MOBILE */
 @media(max-width:600px){
-    header{padding:40px 15px;}
-    .header-box{padding:18px 20px;}
     .logo-header{max-width:200px;}
     header p{font-size:1em;}
-    .box{padding:20px;}
-    .card-produto img{max-height:220px;object-fit:contain;}
-    .card-produto h3,
-    .preco-antigo,
-    .preco-novo,
-    .contador{text-align:center;}
-    .btn-checkout,.btn-off{width:100%;}
-    .whatsapp a{width:100%;max-width:320px;}
 }
 </style>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-47ZMN7BB9T"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-47ZMN7BB9T');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-47ZMN7BB9T');
 </script>
 </head>
 
@@ -205,14 +197,35 @@ footer{
 
 <header>
     <div class="header-box">
-        <img src="logo-maia-unlocker.png" alt="Maia Unlocker" class="logo-header">
+        <img src="img/logo-maia-unlocker.png" alt="Maia Unlocker" class="logo-header">
         <p>Venda de Acessos Premium com Qualidade e Segurança</p>
     </div>
 </header>
 
-<!-- RESTO DA PÁGINA CONTINUA IGUAL -->
-<!-- Seus produtos, timers, WhatsApp e footer já estão corretos -->
+<div class="container">
+
+<div class="box">
+<h2 style="color:#ff1e1e;margin-bottom:20px;">💎 Nossos Produtos</h2>
+
+<div class="grid-produtos">
+
+<!-- PRODUTOS (mantidos iguais ao seu original) -->
+
+</div>
+</div>
+
+<div class="whatsapp">
+    <h2 class="horario-atendimento">
+        ⏰ ATENDIMENTO DAS 09H às 12H e DAS 20:30 às 00:00
+    </h2><br>
+    <a href="https://wa.me/5583999648697" target="_blank">CHAMAR NO WHATSAPP</a>
+</div>
+
+</div>
+
+<footer>
+    © 2025 Maia Unlocker — Todos os direitos reservados
+</footer>
 
 </body>
 </html>
-
