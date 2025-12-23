@@ -306,9 +306,20 @@ iniciarContador("timer3","btn3",2);
 iniciarContador("timer4","btn4",2);
 
 </script>
+    <script>
+document.querySelectorAll('.btn-checkout').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    gtag('event','clique_checkout',{
+      'event_category':'venda',
+      'event_label':btn.id
+    });
+  });
+});
+</script>
 
 </body>
 </html>
+
 
 
 
