@@ -168,7 +168,17 @@ gtag('config', 'G-47ZMN7BB9T');
 <div class="container">
 
 <div class="box">
-<h2 style="color:#ff1e1e;margin-bottom:25px;">💎 Nossos Produtos</h2>
+<h2 style="color:#ff1e1e;margin-bottom:10px;">💎 Nossos Produtos</h2>
+
+<p id="contador-tempo" style="
+    color:#ff4d4d;
+    font-weight:bold;
+    margin-bottom:25px;
+    font-size:1.1em;
+">
+⏰ Oferta expira em: 02:00:00
+</p>
+
 
 <div class="grid-produtos">
 
@@ -217,7 +227,32 @@ gtag('config', 'G-47ZMN7BB9T');
 © 2025 Maia Unlocker — Todos os direitos reservados
 </footer>
 
+    <script>
+let tempo = 2 * 60 * 60; // 2 horas em segundos
+
+const contador = document.getElementById("contador-tempo");
+
+const timer = setInterval(() => {
+    const horas = Math.floor(tempo / 3600);
+    const minutos = Math.floor((tempo % 3600) / 60);
+    const segundos = tempo % 60;
+
+    contador.innerHTML = `⏰ Oferta expira em: 
+        ${String(horas).padStart(2, '0')}:
+        ${String(minutos).padStart(2, '0')}:
+        ${String(segundos).padStart(2, '0')}`;
+
+    if (tempo <= 0) {
+        clearInterval(timer);
+        contador.innerHTML = "⛔ Oferta encerrada";
+    }
+
+    tempo--;
+}, 1000);
+</script>
+
 </body>
 </html>
+
 
 
