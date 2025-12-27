@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <title>Maia Unlocker | Vendas de Acessos</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <meta name="description" content="Maia Unlocker - Venda de acessos premium com qualidade e segurança.">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
 
 body{
     background:#0f0f0f;
@@ -38,11 +38,6 @@ header{
     margin-bottom:20px;
 }
 
-header p{
-    font-size:1.2em;
-    color:#ddd;
-}
-
 /* CONTAINER */
 .container{
     max-width:1200px;
@@ -50,21 +45,19 @@ header p{
     padding:30px 20px;
 }
 
-/* BOX */
 .box{
     background:#1c1c1c;
     padding:30px;
     border-radius:10px;
 }
 
-/* GRID */
+/* PRODUTOS */
 .grid-produtos{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
     gap:30px;
 }
 
-/* CARD */
 .card-produto{
     background:#111;
     border-radius:10px;
@@ -96,7 +89,6 @@ header p{
     color:#00ff88;
 }
 
-/* CONTADOR POR PRODUTO */
 .contador-produto{
     margin:12px 0 15px;
     color:#ff4d4d;
@@ -116,13 +108,73 @@ header p{
     font-weight:bold;
 }
 
+/* SERVIÇOS */
+.servicos{
+    margin-top:70px;
+    background:#121212;
+    padding:50px 25px;
+    border-radius:14px;
+}
+
+.servicos h2{
+    text-align:center;
+    color:#ff1e1e;
+    margin-bottom:10px;
+}
+
+.servicos-sub{
+    text-align:center;
+    color:#aaa;
+    margin-bottom:40px;
+    font-size:.95em;
+}
+
+.grid-servicos{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    max-width:600px;
+    margin:0 auto;
+}
+
+.card-servico{
+    background:#0c0c0c;
+    border:2px solid #222;
+    padding:30px 25px;
+    border-radius:12px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+}
+
+.card-servico h3{
+    color:#00ff88;
+    margin-bottom:12px;
+}
+
+.card-servico p{
+    color:#ccc;
+    font-size:.95em;
+    flex-grow:1;
+}
+
+.card-servico a{
+    margin-top:18px;
+    background:#25d366;
+    color:#000;
+    padding:13px;
+    font-weight:bold;
+    text-decoration:none;
+    border-radius:8px;
+}
+
 /* WHATSAPP */
-.whatsapp{
-    margin:60px 0;
+#whatsapp{
+    margin:70px 0;
     text-align:center;
 }
 
-.whatsapp a{
+#whatsapp a{
     background:#25d366;
     color:#000;
     padding:18px 45px;
@@ -145,13 +197,13 @@ footer{
 <body>
 
 <header>
-    <div class="header-box">
-        <img src="d5aeefad-fcbb-4d35-b65b-347a96b76305.png" class="logo-header">
-        <p>Venda de Acessos Premium com Qualidade e Segurança</p>
-        <p style="margin-top:10px;font-size:.9em;color:#aaa;">
-            🔒 Pagamentos seguros • Entrega rápida • Suporte via WhatsApp
-        </p>
-    </div>
+<div class="header-box">
+<img src="d5aeefad-fcbb-4d35-b65b-347a96b76305.png" class="logo-header">
+<p>Ferramentas e Serviços de Desbloqueios de Celulares</p>
+<p style="margin-top:10px;font-size:.9em;color:#aaa;">
+🔒 Pagamentos seguros • Entrega rápida • Suporte via WhatsApp
+</p>
+</div>
 </header>
 
 <div class="container">
@@ -166,41 +218,60 @@ footer{
 <h3>🔓 Unlock Tool - 6h</h3>
 <p class="preco-antigo">De R$ 20,00</p>
 <p class="preco-novo">Por R$ 15,00</p>
-<p class="contador-produto">⏰ Oferta expira em: 02:00:00</p>
+<p class="contador-produto"></p>
 <a href="https://mpago.la/1iM3BBJ" class="btn-checkout">🛒 Comprar</a>
 </div>
 
 <div class="card-produto">
 <img src="https://http2.mlstatic.com/D_NQ_NP_2X_664896-MLB83497527977_042025-F.webp">
-<h3>🤖 Android Multi Tool - 2h</h3>
+<h3> Android Multi Tool - 2h</h3>
 <p class="preco-antigo">De R$ 16,00</p>
 <p class="preco-novo">Por R$ 12,00</p>
-<p class="contador-produto">⏰ Oferta expira em: 02:00:00</p>
+<p class="contador-produto"></p>
 <a href="https://mpago.la/315fUfZ" class="btn-checkout">🛒 Comprar</a>
 </div>
 
 <div class="card-produto">
 <img src="https://cdn.dooca.store/140665/products/logo-tsm_495x495+fill_ffffff+crop_center.png">
-<h3>🧰 TSM Tool – 6h</h3>
+<h3>TSM Tool - 6h</h3>
 <p class="preco-antigo">De R$ 20,00</p>
 <p class="preco-novo">Por R$ 15,00</p>
-<p class="contador-produto">⏰ Oferta expira em: 02:00:00</p>
+<p class="contador-produto"></p>
 <a href="https://mpago.la/27LAY6V" class="btn-checkout">🛒 Comprar</a>
 </div>
 
 <div class="card-produto">
 <img src="https://http2.mlstatic.com/D_NQ_NP_2X_901867-MLB89298252993_082025-F.webp">
-<h3>🛠️ MDM FIX TOOL – 6h</h3>
+<h3> MDM FIX TOOL - 6h</h3>
 <p class="preco-antigo">De R$ 30,00</p>
 <p class="preco-novo">Por R$ 25,00</p>
-<p class="contador-produto">⏰ Oferta expira em: 02:00:00</p>
+<p class="contador-produto"></p>
 <a href="https://mpago.la/1w1fLQV" class="btn-checkout">🛒 Comprar</a>
 </div>
 
 </div>
 </div>
 
-<div class="whatsapp">
+<!-- SERVIÇOS -->
+<section class="servicos">
+<h2>🛠️ Serviços Profissionais</h2>
+<p class="servicos-sub">Atendimento para Android e iOS</p>
+
+<div class="grid-servicos">
+<div class="card-servico">
+<h3>📱 FRP / Conta Google</h3>
+<p>Remoção profissional de conta Google.</p>
+<a href="#whatsapp">Solicitar</a>
+</div>
+
+<div class="card-servico">
+<h3>🧰 MDM / Knox / iCloud</h3>
+<p>Soluções avançadas corporativas.</p>
+<a href="#whatsapp">Solicitar</a>
+</div>
+
+
+<div id="whatsapp">
 <a href="https://wa.me/5583999648697" target="_blank">CHAMAR NO WHATSAPP</a>
 </div>
 
@@ -212,21 +283,15 @@ footer{
 
 <script>
 document.querySelectorAll(".contador-produto").forEach(contador => {
-    let tempo = 2 * 60 * 60;
-
-    setInterval(() => {
-        const h = Math.floor(tempo / 3600);
-        const m = Math.floor((tempo % 3600) / 60);
-        const s = tempo % 60;
-
-        contador.innerHTML = `⏰ Oferta expira em: ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-
-        if (tempo <= 0) {
-            contador.innerHTML = "⛔ Oferta encerrada";
-            return;
-        }
-        tempo--;
-    }, 1000);
+let tempo = 2 * 60 * 60;
+setInterval(() => {
+const h = Math.floor(tempo / 3600);
+const m = Math.floor((tempo % 3600) / 60);
+const s = tempo % 60;
+contador.innerHTML = `⏰ Oferta expira em: ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+if (tempo <= 0) contador.innerHTML = "⛔ Oferta encerrada";
+tempo--;
+}, 1000);
 });
 </script>
 
