@@ -1,309 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Maia Unlocker | Vendas de Acessos</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Maia Unlocker - Venda de acessos premium com qualidade e segurança.">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-
-body{
-    background:#0f0f0f;
-    color:#fff;
-    font-family:Arial,Helvetica,sans-serif;
-}
-
-/* HEADER */
-header{
-    background:linear-gradient(180deg,#000,#111);
-    padding:90px 20px;
-    text-align:center;
-}
-
-.header-box{
-    max-width:1200px;
-    margin:0 auto;
-    padding:35px 55px;
-    border:3px solid #fff;
-    border-radius:14px;
-    box-shadow:0 0 30px rgba(255,30,30,.9);
-}
-
-.logo-header{
-    max-width:320px;
-    width:100%;
-    margin-bottom:20px;
-}
-
-/* CONTAINER */
-.container{
-    max-width:1200px;
-    margin:auto;
-    padding:30px 20px;
-}
-
-.box{
-    background:#1c1c1c;
-    padding:30px;
-    border-radius:10px;
-}
-
-/* PRODUTOS */
-.grid-produtos{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
-}
-
-.card-produto{
-    background:#111;
-    border-radius:10px;
-    padding:20px;
-    display:flex;
-    flex-direction:column;
-}
-
-.card-produto img{
-    width:100%;
-    border-radius:10px;
-    margin-bottom:15px;
-    background:#fff;
-}
-
-.card-produto h3{
-    color:#ff1e1e;
-    margin-bottom:10px;
-}
-
-.preco-antigo{
-    text-decoration:line-through;
-    color:#ff4d4d;
-}
-
-.preco-novo{
-    font-size:1.4em;
-    font-weight:bold;
-    color:#00ff88;
-}
-
-.contador-produto{
-    margin:12px 0 15px;
-    color:#ff4d4d;
-    font-weight:bold;
-    font-size:.95em;
-    text-align:center;
-}
-
-.btn-checkout{
-    margin-top:auto;
-    background:linear-gradient(135deg,#ff1e1e,#ff4d4d);
-    color:#fff;
-    padding:14px;
-    text-align:center;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-}
-
-/* SERVIÇOS */
-.servicos{
-    margin-top:70px;
-    background:#121212;
-    padding:50px 25px;
-    border-radius:14px;
-}
-
-.servicos h2{
-    text-align:center;
-    color:#ff1e1e;
-    margin-bottom:10px;
-}
-
-.servicos-sub{
-    text-align:center;
-    color:#aaa;
-    margin-bottom:40px;
-    font-size:.95em;
-}
-
-.grid-servicos{
-    display:flex;
-    flex-direction:column;
-    gap:25px;
-    max-width:600px;
-    margin:0 auto;
-}
-
-.card-servico{
-    background:#0c0c0c;
-    border:2px solid #222;
-    padding:30px 25px;
-    border-radius:12px;
-    text-align:center;
-    display:flex;
-    flex-direction:column;
-}
-
-.card-servico h3{
-    color:#00ff88;
-    margin-bottom:12px;
-}
-
-.card-servico p{
-    color:#ccc;
-    font-size:.95em;
-    flex-grow:1;
-}
-
-.card-servico a{
-    margin-top:18px;
-    background:#25d366;
-    color:#000;
-    padding:13px;
-    font-weight:bold;
-    text-decoration:none;
-    border-radius:8px;
-}
-
-/* WHATSAPP */
-#whatsapp{
-    margin:70px 0;
-    text-align:center;
-}
-
-#whatsapp a{
-    background:#25d366;
-    color:#000;
-    padding:18px 45px;
-    font-size:1.2em;
-    font-weight:bold;
-    text-decoration:none;
-    border-radius:12px;
-}
-
-footer{
-    background:#080808;
-    padding:20px;
-    text-align:center;
-    font-size:.9em;
-    color:#777;
-}
-</style>
+    <title>Streaming Premium</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0a0a0a;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+        .container {
+            max-width: 400px;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        h1 { font-size: 32px; margin: 20px 0; }
+        .red { color: #e50914; }
+        .old-price { text-decoration: line-through; color: #999; font-size: 18px; }
+        .new-price { font-size: 48px; color: #4CAF50; font-weight: bold; margin: 10px 0; }
+        .benefits {
+            background: #1a1a1a;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .benefits p { padding: 8px 0; border-bottom: 1px solid #333; }
+        .btn {
+            background: #e50914;
+            color: white;
+            padding: 18px;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+        .urgent { color: #FFD700; font-size: 14px; }
+    </style>
 </head>
-
 <body>
-
-<header>
-<div class="header-box">
-<img src="d5aeefad-fcbb-4d35-b65b-347a96b76305.png" class="logo-header">
-<p>Ferramentas e Serviços de Desbloqueios de Celulares</p>
-<p style="margin-top:10px;font-size:.9em;color:#aaa;">
-🔒 Pagamentos seguros • Entrega rápida • Suporte via WhatsApp
-</p>
-</div>
-</header>
-
-<div class="container">
-<div class="box">
-
-<h2 style="color:#ff1e1e;margin-bottom:25px;">💎 Nossos Produtos</h2>
-
-<div class="grid-produtos">
-
-<div class="card-produto">
-<img src="https://img.elo7.com.br/product/zoom/53A3367/aluguel-unlocktool-2h-6h-e-24h-unlocktool-chimera-contagoogle-aluguelunlocktool-boxfrp-desbloqueio-l.jpg">
-<h3>🔓 Unlock Tool - 6h</h3>
-<p class="preco-antigo">De R$ 20,00</p>
-<p class="preco-novo">Por R$ 15,00</p>
-<p class="contador-produto"></p>
-<a href="https://mpago.la/1iM3BBJ" class="btn-checkout">🛒 Comprar</a>
-</div>
-
-<div class="card-produto">
-<img src="https://http2.mlstatic.com/D_NQ_NP_2X_664896-MLB83497527977_042025-F.webp">
-<h3> Android Multi Tool - 3h</h3>
-<p class="preco-antigo">De R$ 16,00</p>
-<p class="preco-novo">Por R$ 12,00</p>
-<p class="contador-produto"></p>
-<a href="https://mpago.la/315fUfZ" class="btn-checkout">🛒 Comprar</a>
-</div>
-
-<div class="card-produto">
-<img src="https://cdn.dooca.store/140665/products/logo-tsm_495x495+fill_ffffff+crop_center.png">
-<h3>TSM Tool - 12h</h3>
-<p class="preco-antigo">De R$ 20,00</p>
-<p class="preco-novo">Por R$ 15,00</p>
-<p class="contador-produto"></p>
-<a href="https://mpago.la/27LAY6V" class="btn-checkout">🛒 Comprar</a>
-</div>
-
-<div class="card-produto">
-<img src="https://http2.mlstatic.com/D_NQ_NP_2X_901867-MLB89298252993_082025-F.webp">
-<h3> MDM FIX TOOL - 6h</h3>
-<p class="preco-antigo">De R$ 30,00</p>
-<p class="preco-novo">Por R$ 25,00</p>
-<p class="contador-produto"></p>
-<a href="https://mpago.la/1w1fLQV" class="btn-checkout">🛒 Comprar</a>
-</div>
-
-</div>
-</div>
-
-<!-- SERVIÇOS -->
-<section class="servicos">
-<h2>🛠️ Serviços Profissionais</h2>
-<p class="servicos-sub">Suporte Android e iOS</p>
-
-<div class="grid-servicos">
-<div class="card-servico">
-<h3>📱 FRP / Conta Google</h3>
-<p>Remoção de conta Google Vários Aparelhos</p>
-<a href="#whatsapp">Solicitar Orçamento</a>
-</div>
-
-<div class="card-servico">
-<h3>📱 MDM / Knox /</h3>
-<p>Remoção de bloqueio de lojas como Payjoy/Atlas/Ume entre outras</p>
-<a href="#whatsapp">Solicitar Orçamento</a>
-</div>
-
-    <div class="card-servico">
-<h3> Icloud </h3>
-<p>Desbloqueio Icloud de Iphones e Ipads </p>
-<a href="#whatsapp">Solicitar Orçamento</a>
-</div>
-
-<div id="whatsapp">
-<a href="https://wa.me/5583999648697" target="_blank">CHAMAR NO WHATSAPP</a>
-</div>
-
-</div>
-
-<footer>
-© 2025 Maia Unlocker — Todos os direitos reservados
-</footer>
-
-<script>
-document.querySelectorAll(".contador-produto").forEach(contador => {
-let tempo = 2 * 60 * 60;
-setInterval(() => {
-const h = Math.floor(tempo / 3600);
-const m = Math.floor((tempo % 3600) / 60);
-const s = tempo % 60;
-contador.innerHTML = `⏰ Oferta expira em: ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-if (tempo <= 0) contador.innerHTML = "⛔ Oferta encerrada";
-tempo--;
-}, 1000);
-});
-</script>
-
+    <div class="container">
+        <p style="font-size: 50px;">🎬</p>
+        <h1><span class="red">STREAMING</span> <br>PREMIUM</h1>
+        <p style="color: #ccc;">Filmes e Séries • 4K Ultra HD<br>Sem Anúncios • 4 Pessoas</p>
+        
+        <p class="old-price">De: R$ 55,90/mês</p>
+        <p class="new-price">R$ 10,00</p>
+        <p style="color: #4CAF50;">⭐ Preço único!</p>
+        
+        <div class="benefits">
+            <p>📺 +5.000 Filmes e Séries</p>
+            <p>👥 4 Telas Simultâneas</p>
+            <p>🎥 Qualidade 4K Ultra HD</p>
+            <p>🚫 Zero Propagandas</p>
+            <p>💳 Pagamento via PIX</p>
+            <p>⚡ Acesso em 2 minutos</p>
+        </div>
+        
+        <p class="urgent">⚠️ ÚLTIMAS VAGAS DISPONÍVEIS HOJE!</p>
+        
+        <a href="https://t.me/SEU_BOT" class="btn">🔥 QUERO MEU ACESSO AGORA</a>
+        
+        <p style="color: #666; font-size: 12px;">
+            ✅ Compra Segura | ✅ Suporte 24h | ✅ 500+ Clientes
+        </p>
+    </div>
 </body>
 </html>
-
-
-
-
-
