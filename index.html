@@ -1,13 +1,139 @@
-<!DOCTYPE html><html> <head> <title>Tela Premium - Promoção </title> <style> * { margin: 0; padding: 0; box-sizing: border-box; } body { background: #0a0a0a; font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; color: white; } .container { max-width: 400px; padding: 30px 20px; text-align: center; } .logo-img { width: 180px; margin: 20px auto; display: block; } h1 { font-size: 32px; margin: 20px 0; color: #e50914; } .old-price { text-decoration: line-through; color: #999; font-size: 18px; } .new-price { font-size: 48px; color: #4CAF50; font-weight: bold; margin: 10px 0; } .benefits { background: #1a1a1a; border-radius: 15px; padding: 20px; margin: 20px 0; text-align: left; } .benefits p { padding: 10px 0; border-bottom: 1px solid #333; font-size: 16px; } .btn { background: #e50914; color: white; padding: 18px; border-radius: 30px; font-size: 20px; font-weight: bold; text-decoration: none; display: block; margin: 20px 0; animation: pulse 2s infinite; } @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.03); } 100% { transform: scale(1); } } .urgent { color: #FFD700; font-size: 14px; margin: 10px 0; } .badge { background: #4CAF50; padding: 5px 15px; border-radius: 20px; display: inline-block; font-size: 12px; margin: 10px 0; } </style> </head> <body> <div class="container">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
 
-    <!-- SUA IMAGEM -->
+    <!-- ESSENCIAL PRA MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tela Premium - Promoção</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0a;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px 15px;
+            text-align: center;
+        }
+
+        .logo-img {
+            width: 70%;
+            max-width: 180px;
+            margin: 15px auto;
+            display: block;
+        }
+
+        h1 {
+            font-size: 26px;
+            margin: 15px 0;
+            color: #e50914;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 16px;
+        }
+
+        .new-price {
+            font-size: 38px;
+            color: #4CAF50;
+            font-weight: bold;
+            margin: 8px 0;
+        }
+
+        .benefits {
+            background: #1a1a1a;
+            border-radius: 15px;
+            padding: 15px;
+            margin: 15px 0;
+            text-align: left;
+        }
+
+        .benefits p {
+            padding: 8px 0;
+            border-bottom: 1px solid #333;
+            font-size: 14px;
+        }
+
+        .btn {
+            background: #e50914;
+            color: white;
+            padding: 16px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        .urgent {
+            color: #FFD700;
+            font-size: 13px;
+            margin: 10px 0;
+        }
+
+        .badge {
+            background: #4CAF50;
+            padding: 5px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 11px;
+            margin: 10px 0;
+        }
+
+        /* EXTRA: ajustes pra telas muito pequenas */
+        @media (max-width: 360px) {
+            h1 {
+                font-size: 22px;
+            }
+
+            .new-price {
+                font-size: 32px;
+            }
+
+            .btn {
+                font-size: 16px;
+                padding: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
     <img src="https://i.postimg.cc/MzB4JKZQ/image.png?dl=1" alt="Tela Premium" class="logo-img">
     
     <div class="badge">⚡ ACESSO IMEDIATO</div>
     
     <h1>TELA PREMIUM</h1>
     
-    <p style="color: #ccc; font-size: 16px;">
+    <p style="color: #ccc; font-size: 14px;">
         Filmes e Séries • 4K Ultra HD<br>
         Sem Anúncios • 4 Pessoas
     </p>
@@ -25,7 +151,7 @@
         <p>⚡ Acesso em 2 minutos</p>
     </div>
     
-    <p class="urgent">⚠️ ULTIMAS CONTAS DISPONÍVEIS HOJE!</p>
+    <p class="urgent">⚠️ ÚLTIMAS CONTAS DISPONÍVEIS HOJE!</p>
     
     <a href="https://t.me/reidanetflix_bot" class="btn">
         🔥 QUERO MINHA TELA PREMIUM
@@ -35,6 +161,7 @@
         ✅ Compra 100% Segura | ✅ Suporte 24h<br>
         ✅ Mais de 500 clientes satisfeitos
     </p>
-    
+
 </div>
-</body> </html>
+</body>
+</html>
